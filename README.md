@@ -1,0 +1,2 @@
+json数据来源自己搭建的tomcat服务器，用retrofit自带的gson解析器解析单json数据没有问题，但是解析json数组解析不了，即便把请求对象换成数组call<list<>>也不行，不知道怎么回事，
+只好把请求对象换成原生的responsebody，得到请求体后在用gson解析，实在麻烦，还不如直接用okhttp。
